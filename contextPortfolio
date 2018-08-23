@@ -1,0 +1,27 @@
+context.portfolio:
+
+Portfolio({
+'returns': 0.017185060999999502,
+'pnl': 171.85061000000132,
+'positions_value': 4110.66,
+'positions': {
+    Equity(8 [AAPL]):
+    Position({
+        'asset': Equity(8 [AAPL]),
+        'last_sale_date': Timestamp('2014-12-26 21:00:00+0000', tz='UTC'),
+        'amount': 18,
+        'last_sale_price': 113.99000000000001,
+        'cost_basis': 107.39467}),
+    Equity(1894 [MSFT]):
+    Position({
+        'asset': Equity(1894 [MSFT]),
+        'last_sale_date': Timestamp('2014-12-26 21:00:00+0000', tz='UTC'),
+        'amount': 43,
+        'last_sale_price': 47.88,  #this changes every day
+        'cost_basis': 46.64431})},  #this is set when you buy the position
+'portfolio_value': 10171.850610000001,
+'cash': 6061.190610000001,
+'cash_flow': -3938.80939,
+'positions_exposure': 4110.66,
+'starting_cash': 10000.0,
+'start_date': Timestamp('2014-10-28 00:00:00+0000', tz='UTC', freq='C')})
