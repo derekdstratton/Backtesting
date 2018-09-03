@@ -1,3 +1,5 @@
+# Junk File is a place to test random things to see how they work for debugging, not part of the trading system.
+
 import pandas, numpy
 import matplotlib.pyplot as plt
 

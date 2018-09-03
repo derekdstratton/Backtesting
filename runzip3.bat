@@ -1,1 +1,0 @@
-zipline run -f simulatortest3.py --start 2010-1-1 --end 2011-1-1 --capital-base 10000
