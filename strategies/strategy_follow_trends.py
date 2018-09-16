@@ -14,7 +14,7 @@ RISK_PERCENTAGE = 0.01
 
 
 def initialize(context):
-    tickers = watchlist.speedy
+    tickers = watchlist.sp500
 
     context.equities = []
     for ticker in tickers:
@@ -46,8 +46,7 @@ def handle_data(context, data):
 
         # sell_signals = sellsignals.long_moving_avg_greater_than_short_moving_avg(context, data, equity)
         sell_signals = sellsignals.price_goes_over_one_standard_deviation_away(context, data, equity) or \
-                       sellsignals.basic_stop_loss(context, data, equity) or \
-                       sellsignals.profit_exit_2r(context, data, equity)
+                       sellsignals.basic_stop_loss(context, data, equity)
 
         # sell signal
         if sell_signals:

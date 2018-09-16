@@ -9,7 +9,6 @@ import numpy as np
 
 for x in range(1, 20):
     startdate=dt.date(2000,1,1)
-    #  nbdays=(dt.date.today()-startdate).days
     nbdays=(dt.date(2017, 1, 1)-startdate).days
     d=random.randint(0,nbdays)
     rand_date=startdate+dt.timedelta(days=d)

@@ -1,7 +1,7 @@
 def price_goes_over_one_standard_deviation_away(context, data, equity):
     moving_stdev = data.history(equity, 'price', bar_count=20, frequency="1d").std()
     current_price = data.current(equity, 'price')
-    expected_price = data.history(equity, 'price', bar_count=20, frequency="1d").rolling(100).mean()[-1]
+    expected_price = data.history(equity, 'price', bar_count=20, frequency="1d").rolling(20).mean()[-1]
 
     # long position
     if context.portfolio.positions[equity].amount > 0:

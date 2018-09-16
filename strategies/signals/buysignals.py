@@ -14,7 +14,7 @@ def price_is_trending_up(context, data, equity):
     model = sm.OLS(prices, dates)
     results = model.fit()
     # print(results.params)
-    return results.params[1] > 0.3
+    return results.params[1] > 0.6
 
 def enough_cash_to_buy(context, data, equity):
     # current price
